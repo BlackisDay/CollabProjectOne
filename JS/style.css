@@ -1,0 +1,6 @@
+div #btn{
+    width:5%;
+    height:20px;
+    background-color:red;
+    cursor: pointer;
+}
