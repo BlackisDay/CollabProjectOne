@@ -1,8 +1,8 @@
 var btn = document.querySelector("#btn");
 var request = 'https://api.publicapis.org/entries'
 
-var teamName = document.querySelector("#team").value;
-function grabText()
+// var teamName = document.querySelector("#team").value;
+// function grabText()
 function btnclick(){
     // fetch(request)
     //     .then((response) => {
@@ -22,6 +22,7 @@ var requestOptions = {
     headers: myHeaders,
     redirect:'follow'
   };
+  var teamName = "Lions"
   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
     .then(response => response.json())
     .then(result => console.log((result.response[0])))
