@@ -1,0 +1,17 @@
+
+
+
+div #btn{
+    width:5%;
+    height:20px;
+    background-color:red;
+    cursor: pointer;
+}
+
+#FontC h2{
+    font-family: 'Dela Gothic One', cursive;
+}
+
+#FontC p{
+    font-family: 'Volkhov', serif;
+}
