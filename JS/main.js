@@ -23,7 +23,7 @@ var requestOptions = {
     headers: myHeaders,
     redirect:'follow'
   };
-  var teamName = "Lions"
+  var teamName = "lions"
   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
     .then(response => response.json())
     .then(result => console.log((result.response[0])))
