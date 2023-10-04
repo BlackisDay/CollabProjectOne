@@ -1,34 +1,43 @@
-var btn = document.querySelector("#btn");
+var test = document.querySelector("#test");
+var btn = document.querySelector("#btn")
+var weatherBtn = function Btn(){
+var now = dayjs().format('DD'+'/'+"MM"+"/"+"YYYY")
+ var para = document.createElement("p")
+console.log(now)
+}
+
+btn.addEventListener("click",weatherBtn())
+
 var request = 'https://api.publicapis.org/entries'
-
-// var teamName = document.querySelector("#team").value;
-// function grabText()
-function btnclick(){
-    // fetch(request)
-    //     .then((response) => {
-    //         if(response == 200){
-    //             console.log("hi")
-    //         } else if(response == 404){
-    //             window.location.href = "/404.html"
-    //         }
-    //         console.log(response)
-    var myHeaders = new Headers();
-var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
-myHeaders.append('x-rapidapi-key', APIKey);
-myHeaders.append("x-rapidapi-host", "v1.american-football.api-sports.io");
-
-var requestOptions = {
-    method: "GET",
-    headers: myHeaders,
-    redirect:'follow'
-  };
-  var teamName = "lions"
-  fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
-    .then(response => response.json())
-    .then(result => console.log((result.response[0])))
-    .catch(error => console.log('error', error));
-        
+var click = function btnclick(){
+    fetch(request)
+        .then((response) => {
+            if(response.status == 200){
+                console.log("Received Response")
+            } else if(response.status == 404){
+                window.location.href = "/404.html" //Add Request+Headers+API when available
+            }
+            console.log(response)
+        })
     }
+// btn.addEventListener("click",click())
+//     var myHeaders = new Headers();
+// var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
+// myHeaders.append('x-rapidapi-key', APIKey);
+// myHeaders.append("x-rapidapi-host", "v1.american-football.api-sports.io");
+
+// var requestOptions = {
+//     method: "GET",
+//     headers: myHeaders,
+//     redirect:'follow'
+//   };
+//   var teamName = "Lions"
+//   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
+//     .then(response => response.json())
+//     .then(result => console.log((result.response[0])))
+//     .catch(error => console.log('error', error));
+        
+//     }
         
 //         var myHeaders = new Headers();
 // var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
@@ -66,4 +75,4 @@ var requestOptions = {
 //     .then(result => console.log(result))
 //     .catch(error => console.log('error', error));
 
-btn.addEventListener("click",btnclick())
+
