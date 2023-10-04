@@ -1,4 +1,5 @@
 var btn = document.querySelector("#btn");
+
 var request = 'https://api.publicapis.org/entries'
 
 // var teamName = document.querySelector("#team").value;
