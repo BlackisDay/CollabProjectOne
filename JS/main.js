@@ -1,9 +1,7 @@
 var btn = document.querySelector("#btn");
-
 var request = 'https://api.publicapis.org/entries'
 
-// var teamName = document.querySelector("#team").value;
-// function grabText()
+
 function btnclick(){
     // fetch(request)
     //     .then((response) => {
@@ -13,7 +11,7 @@ function btnclick(){
     //             window.location.href = "/404.html"
     //         }
     //         console.log(response)
-    var myHeaders = new Headers();
+  var myHeaders = new Headers();
 var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
 myHeaders.append('x-rapidapi-key', APIKey);
 myHeaders.append("x-rapidapi-host", "v1.american-football.api-sports.io");
