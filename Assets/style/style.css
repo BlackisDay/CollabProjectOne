@@ -13,7 +13,11 @@ div #btn{
     font-family: 'Volkhov', serif;
 }
 
-img#test{
+#AU {
+    font-size: larger;
+}
+
+img #test {
     position:relative;
     z-index: 0;
     background-color:grey;
