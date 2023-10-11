@@ -2,15 +2,7 @@ var btn = document.querySelector("#btn");
 var request = 'https://api.publicapis.org/entries'
 
 
-function btnclick(){
-    // fetch(request)
-    //     .then((response) => {
-    //         if(response == 200){
-    //             console.log("hi")
-    //         } else if(response == 404){
-    //             window.location.href = "/404.html"
-    //         }
-    //         console.log(response)
+
   var myHeaders = new Headers();
 var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
 myHeaders.append('x-rapidapi-key', APIKey);
@@ -27,7 +19,7 @@ var requestOptions = {
     .then(result => console.log((result.response[0])))
     .catch(error => console.log('error', error));
         
-    }
+
         
 //         var myHeaders = new Headers();
 // var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
@@ -65,4 +57,4 @@ var requestOptions = {
 //     .then(result => console.log(result))
 //     .catch(error => console.log('error', error));
 
-btn.addEventListener("click",btnclick())
+// btn.addEventListener("click",btnclick())

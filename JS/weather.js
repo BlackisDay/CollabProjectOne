@@ -88,7 +88,7 @@ function forecast (UI) {
             forecastT[i] = response.list[i].main.temp; //Grabs main temperature  
             forecastH[i] = response.list[i].main.humidity;  
 
-            var newCol2 = $("<div>").attr("class", "col-2");
+            var newCol2 = $("<div>").attr("class", "medium-2 column end");
             rowC.append(newCol2);
 
             var newDivC = $("<div>").attr("class", "card text-white bg-primary mb-3");
