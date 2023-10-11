@@ -28,29 +28,72 @@
       </div>
     </div>
     <!-- End Top Bar -->
-    <section>
-      <div class="large-10 row">
-       <button type="submit" style="background-color:grey">Submit</button>
-       <input type="text" placeholder="Enter City Here">
-      </div>
-    </section>
 
     <div class="row">
       <div class="medium-6 columns medium-push-6">
         <img class="thumbnail" src="./Assets/Images/Wallpapers Cool NFL - 2023 NFL Football Wallpapers.jpg">
       </div>
       <div class="medium-6 columns medium-pull-6" id="FontC">
-        <h2>MyFTS</h2>
-            <p>Welcome to MyFTS! If you have stumbled across this page you must be wondering. What is MyFTS? Well to begin with. MyFTS is a website
-                that lets you keep track of YOUR Favorite Team Stats. What does FTS stand for? Well FTS stands for "Favorite Team Stats".
-                We all have a favorite team, whether it be in Basketball,Baseball, or Football. Currently MyFTS helps you keep track of your 
-                Favorite Team Stats making it easier for everyone to see.
+        <h2>Weather Search</h2>
+            <p>Ever wanted to search for the weather where your NFL team will be playing? Well on this page you can just look up the city and you
+              will see the forecast for the next five days. All you have to do is search.
             </p>             
       </div>
     </div>
-    <div class = "large-10 row">
-      <h3>hey whatsup</h3>
-    </div>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="row" id="row1">
+                  Type below to search for a city:
+              </div>
+              
+              </div>
+          </div>
+              <div class="row">
+                  <form class="form-inline my-2 my-sm-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Type a city" aria-label="Search" id="searchInput">
+                      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+              </div>
+              <div class="row" id="lastSearch">
+                  <div class="card" style="width: 18rem;" id="buttonsList">
+                      <!-- Buttons will go here-->
+                  </div>
+              </div>
+              <section id="Weather-Beginning">
+              <div class="col-lg-8" id="weathers">
+                  <div class="row" id="weathershow">
+                      <div class="card" style="width: 98%;" id="cardDisplay">
+  
+                          <div class="grid-x grid-margin-x small-up-2 medium-up-3" id="editrow">
+                              <div class="cell">
+                                  <div class="card-body" id="card">
+                                    <h2 class="card-title" id="cResult"></h2>
+                                    <p class="card-text" id="tResult"></p>
+                                    <p class="card-text" id="hResult"></p>
+                                    <p class="card-text" id="wResult"></p>
+                                    <p class="card-text" id="UVIResult"></p>
+                                  </div>
+      
+                              </div>
+                              <div class="col-lg-4" id="mainIcon">
+                                  <!-- Main -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- 5 Day Forecast -->
+                  <div class="row" id="row5day">
+                      
+                  </div>
+  
+                  <div class="row" id="rowCards">
+                      <!-- Cards Goes Here -->
+                  </div>
+              </div>
+          </section>
+          </div>
+   </section> 
     <div class="row">
       <div class="medium-4 columns">
         <h3>Trending News</h3>
@@ -69,10 +112,10 @@
     <hr> <!--Line between Contents-->
     
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script src = "./JS/main.js"></script>
+    <script src = "./JS/weather.js"></script>
     <script>
       $(document).foundation();
     </script>
