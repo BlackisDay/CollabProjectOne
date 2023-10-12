@@ -25,9 +25,10 @@ window.onclick = function(event) {
 }
 
 var request = 'https://api.publicapis.org/entries'
-var idteam = document.getElementById("#IdHere");
+var idteam = document.getElementById("IdHere");
 var teamhere = document.getElementById("TeamHere")
-
+var teamNames = document.getElementById("TeamNames")
+var logoHere = document.getElementById("logoHere")
 
 
   var myHeaders = new Headers();
@@ -43,6 +44,7 @@ var requestOptions = {
   var teamName = "dolphins"
   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
     .then(response => response.json())
-    .then(result => console.log((result.response[0])))
-    
+    .then(result => idteam.textContent = "team id:" + result.response[0].id)
+    .then(result => teamNames.textContent = "Team Name" + result.response[0].name)
+    .then(result => teamNames.innerHTML = "logo" + result.response[0].logo)
     .catch(error => console.log('error', error));
