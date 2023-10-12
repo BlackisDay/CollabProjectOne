@@ -24,8 +24,6 @@ img #test {
     width:100%;
     height:500px;
 }
-<<<<<<< HEAD
-=======
 .contactUs {
     text-align: center;
 }
@@ -41,4 +39,15 @@ img #test {
     padding:5%
 
 }
->>>>>>> 02908fd9d6355ae686c8e7218090e5abf0151551
+.top-bar {
+    position:relative;
+    padding:2rem;
+}
+.top-bar-left img{
+    position:absolute;
+    height:100%;
+    width:30%;
+    left:40rem;
+    z-index:1;
+    bottom:1rem;
+}

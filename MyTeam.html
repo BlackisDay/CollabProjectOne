@@ -1,32 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lobster&family=Volkhov&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="/Assets/style/style.css">
-    <title>MyTeam</title>
-</head>
-<body>
-     <button type="submit" id="submitTeam">
-        Pull team
-     </button>
-
-     <div class="card" style="width: 300px;"> 
-        <div class="card-divider"> 
-            Team Name?
-        </div> 
-        <img src= 
-        "https://placehold.co/600x400/EEE/31343C"> 
-        <div class="card-section"> 
-            <h4>More Placeholder Text</h4> 
-            <p>Also More Placeholder Text</p> 
-        </div> 
-        <div class="card-divider"> 
-            Put something here 
-        </div> 
-    </div> 
+    <link rel="stylesheet" href="Assets/style/style.css">
+    <title>FTS</title>
     
-     <script src="./JS/MyTeam.js"></script>
-</body>
+  </head>
+  <body>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">FTS</li>
+          <li><a href="weather.html">Weather</a></li>
+          <li><a href="#">Teams</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="/MyTeam.html">MyTeam</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src = "./JS/MyTeam.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
