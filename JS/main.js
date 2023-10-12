@@ -1,24 +1,25 @@
 // var btn = document.querySelector("#btn");
-var request = 'https://api.publicapis.org/entries'
+// var request = 'https://api.publicapis.org/entries'
 
 
 
-  var myHeaders = new Headers();
-var APIKey = "fe1bf34ae2c8ad677700a87684d763a9"
-myHeaders.append('x-rapidapi-key', APIKey);
-myHeaders.append("x-rapidapi-host", "v1.american-football.api-sports.io");
+//   var myHeaders = new Headers();
+// var APIKey = "53149e744c07b850867cccdcf69e6b2b"
+// myHeaders.append('x-rapidapi-key', APIKey);
+// myHeaders.append("x-rapidapi-host", "v1.american-football.api-sports.io");
 
-var requestOptions = {
-    method: "GET",
-    headers: myHeaders,
-    redirect:'follow'
-  };
-  var teamName = "dolphins"
-  fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
-    .then(response => response.json())
-    .then(result => console.log((result.response[0])))
-    .catch(error => console.log('error', error));
+// var requestOptions = {
+//     method: "GET",
+//     headers: myHeaders,
+//     redirect:'follow'
+//   };
+//   var teamName = "dolphins"
+//   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
+//     .then(response => response.json())
+//     .then(result => console.log((result.response[0])))
+//     .catch(error => console.log('error', error));
         
+
 
         
 //         var myHeaders = new Headers();
