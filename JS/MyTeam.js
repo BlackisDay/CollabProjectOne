@@ -28,7 +28,8 @@ var request = 'https://api.publicapis.org/entries'
 var idteam = document.getElementById("IdHere");
 var teamhere = document.getElementById("TeamHere")
 var teamNames = document.getElementById("TeamNames")
-var logoHere = document.getElementById("logoHere")
+var logoImg = document.getElementById("logoHere")
+var flagImg = document.getElementById("FlagHere")
 
 
   var myHeaders = new Headers();
@@ -44,7 +45,14 @@ var requestOptions = {
   var teamName = "dolphins"
   fetch(`https://v1.american-football.api-sports.io/teams?search=${teamName}`,requestOptions)
     .then(response => response.json())
-    .then(result => idteam.textContent = "team id:" + result.response[0].id)
-    .then(result => teamNames.textContent = "Team Name" + result.response[0].name)
-    .then(result => teamNames.innerHTML = "logo" + result.response[0].logo)
+    .then(result => {
+        idteam.textContent = "Team ID:" + result.response[0].id,
+        teamNames.textContent= result.response[0].name,
+        teamhere.textContent= "We present to you,the " + result.response[0].name + "!",
+        logoImg.setAttribute("src",result.response[0].logo),
+        logoHere.append("src")
+        flagImg.setAttribute("src",result.response[0].country.flag)
+        flagImg.append("src")
+
+})
     .catch(error => console.log('error', error));
