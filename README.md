@@ -15,6 +15,7 @@ Weather forecast for another area will have to find the Lat,Lon for that specifi
 For music page, we will have to be able to search up whomever we want.
 Be able to check what artists they listen too and so forth.
 
-The 404 page can be put for errors like incorrect link address and so forth.
+This Collab Project will eventually be included in the Portfolio for future references for employers. 
 
-We can include Different Fonts.
+https://blackisday.github.io/CollabProjectOne/
+
