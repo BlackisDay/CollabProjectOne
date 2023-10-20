@@ -43,11 +43,12 @@ img #test {
     position:relative;
     padding:2rem;
 }
+
 .top-bar-left img{
-    position:absolute;
-    height:100%;
-    width:30%;
-    left:40rem;
-    z-index:1;
-    bottom:1rem;
+    position: absolute;
+    height: 90%;
+    width: 9%;    
+    left:35rem;
+    z-index: index 1;
+    bottom: 0rem;
 }
