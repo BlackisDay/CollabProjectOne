@@ -1,6 +1,23 @@
 .medium-2{
-    background-color:blue;
     border-radius:1%;
     border-style: inset;
     color:black;
+}
+
+.top-bar {
+    position:relative;
+    padding:2rem;
+}
+
+.top-bar-left img{
+    position: absolute;
+    height: 85%;
+    width: 9%;    
+    left:35rem;
+    z-index: index 2;
+    bottom:1rem;
+}
+
+.top-bar {
+    background-color: royalblue;
 }
